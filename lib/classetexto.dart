@@ -4,14 +4,15 @@
 import 'package:flutter/material.dart';
 
 class classetexto extends StatelessWidget {
-  const classetexto(this.texto, this.tamanho, {super.key});
+  const classetexto(this.texto, this.tamanho, this.modoFonte, {super.key});
 
 final String texto;
 final double tamanho;
+final FontWeight modoFonte;
 
  @override
   Widget build(BuildContext context) {
-    return Text(texto, style: TextStyle(fontSize: tamanho));
+    return Text(texto, style: TextStyle(fontSize: tamanho, fontWeight: modoFonte ,),);
   }
 }
 
